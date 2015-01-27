@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="registeration" extends="struts-default">
+
+		<action name="u" class="u">
+                                   
+			<result name="success">/registerSuccess.jsp</result>
+			<result name="fail">/registerFail.jsp</result>
+			<result name="list">/registerlist.jsp</result>
+			<result name="getUserById">/getUserById.jsp</result>
+
+		</action>
+	</package>
+
+	<!-- 打开Struts的DMI -->
+  <constant name="struts.enable.DynamicMethodInvocation" value="true" /> 
+
+</struts>
